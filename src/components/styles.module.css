@@ -1,0 +1,51 @@
+.article {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 5rem;
+ padding: 3rem;
+ width: 200px;
+}
+
+.content {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.title {
+ font-family: 'Big Shoulders', sans-serif;
+ font-size: 2rem;
+ font-weight: 700;
+ color: hsl(0, 0%, 95%);
+ text-transform: uppercase;
+}
+
+.description {
+ font-family: 'Lexend Deca', sans-serif;
+ font-size: 0.9375rem;
+ color: hsla(0, 0%, 100%, 0.75);
+ line-height: 1.5;
+}
+
+.icon {
+ width: 60px;
+ height: 40px;
+ flex-shrink: 0;
+}
+
+.button {
+ background-color: hsl(0, 0%, 95%);
+ padding: 0.9rem;
+ border-radius: 30px;
+ border: 1px solid transparent;
+ cursor: pointer;
+ font-family: 'Lexend Deca', sans-serif;
+ font-size: 0.9375rem;
+ width: 70%;
+}
+
+.button:hover {
+ border: 1px solid hsl(0, 0%, 95%);
+ background-color: transparent;
+}

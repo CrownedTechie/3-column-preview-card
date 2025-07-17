@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  padding: 2rem 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.preview-card.sedan {
+  border-radius: 8px 8px 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.preview-card.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.preview-card.luxury {
+  border-radius: 0 0 8px 8px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.preview-card.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+.preview-card.suv button{
+  color: hsl(184, 100%, 22%);
+}
+
+.preview-card.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.preview-card button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 900px) {
+ .wrapper {
+  padding:  0;
+ }
+
+ .gridContainer {
+  grid-template-columns: repeat(3, 1fr);
+ }
+
+ .sedan {
+  border-radius: 8px 0 0 8px;
+ }
+
+ .luxury {
+  border-radius: 0 8px 8px 0;
+ }
+}
